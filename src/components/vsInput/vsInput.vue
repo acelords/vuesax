@@ -66,6 +66,7 @@
             :class="{'icon-before':iconAfter}"
             :icon-pack="valIconPack"
             :icon="getIcon"
+            @click="focusInput(); $emit('validate-icon-click');">
           ></vs-icon>
         </span>
       </transition>

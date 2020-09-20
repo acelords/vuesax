@@ -51,6 +51,7 @@ Vuesax is an open source [MIT](https://raw.githubusercontent.com/lusaxweb/vuesax
 - Icons default switched from material icons (material-icons) to material design icons (MDI)
 - Added 'info' color present in bootstrap
 - Based off on vuesax version 3.12.0
+- Added `validate-icon-click` event on `vs-input`. Listen to it via `v-on:validate-icon-click`
 
 ## Introduction
 
