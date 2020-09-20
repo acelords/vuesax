@@ -57,7 +57,7 @@
         @click="focusInput(); $emit('icon-click');">
       </vs-icon>
 
-      <transition name="icon-validate" >
+      <transition name="icon-validate">
         <span
           v-if="success || danger || warning"
           :class="{'icon-before':iconAfter}"
@@ -67,7 +67,7 @@
             :icon-pack="valIconPack"
             :icon="getIcon"
             @click="focusInput(); $emit('validate-icon-click');">
-          ></vs-icon>
+          </vs-icon>
         </span>
       </transition>
     </div>
