@@ -144,7 +144,7 @@ export default {
     },
     iconPack:{
       type:String,
-      default:'material-icons'
+      default:'mdi'
     },
     description:{
       default: false,
@@ -180,12 +180,12 @@ export default {
   }),
   computed: {
     defaultNextIcon() {
-      if(this.$vs.rtl) return 'chevron_left'
-      return 'chevron_right'
+      if(this.$vs.rtl) return 'mdi-chevron-left'
+      return 'mdi-chevron-right'
     },
     defaultPrevIcon() {
-      if(this.$vs.rtl) return 'chevron_right'
-      return 'chevron_left'
+      if(this.$vs.rtl) return 'mdi-chevron-right'
+      return 'mdi-chevron-left'
     },
     stylePagination () {
       let style = {}

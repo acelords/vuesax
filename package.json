@@ -1,13 +1,13 @@
 {
-  "name": "vuesax",
-  "version": "3.12.0",
+  "name": "@acelords/vuesax",
+  "version": "3.0.3",
   "description": "Framework Components for Vue js",
   "license": "MIT",
-  "author": "ldrovira <luisdanielrovira8@gmail.com>",
+  "author": "lexxyungcarter <lexxyungcarter@gmail.com>",
   "homepage": "https://lusaxweb.github.io/vuesax/#/",
-  "repository": "lusaxweb/vuesax",
+  "repository": "acelords/vuesax",
   "bugs": {
-    "url": "https://github.com/lusaxweb/vuesax/issues"
+    "url": "https://github.com/acelords/vuesax/issues"
   },
   "keywords": [
     "vuesax",
@@ -22,7 +22,8 @@
     "ui",
     "frontend",
     "responsive",
-    "stylus"
+    "stylus",
+    "acelords"
   ],
   "main": "dist/vuesax.common.js",
   "unpkg": "dist/vuesax.umd.min.js",
@@ -35,7 +36,7 @@
     "lint": "vue-cli-service lint",
     "v": "npm version patch",
     "v2": "npm version minor",
-    "p": "npm publish",
+    "p": "npm publish --access public",
     "deploy": "npm run build & git add . & git commit -m 'deploy' & npm run v & npm run p && git push",
     "deploy2": "npm run build & git add . & git commit -m 'deploy' & npm run v2 & npm run p && git push",
     "docs:build": "vuepress build docs",

@@ -47,6 +47,11 @@ Vuesax is an open source [MIT](https://raw.githubusercontent.com/lusaxweb/vuesax
   </a>
  </p>
 
+## Changes in This fork From Parent
+- Icons default switched from material icons (material-icons) to material design icons (MDI)
+- Added 'info' color present in bootstrap
+- Based off on vuesax version 3.12.0
+
 ## Introduction
 
 [Vuesax](https://lusaxweb.github.io/vuesax/) is a framework of components based on [vue.js](https://vuejs.org/), it is a framework that is designed from scratch to be incrementally adoptable.

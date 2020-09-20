@@ -64,7 +64,7 @@ export default {
       type:String
     },
     iconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     },
   },

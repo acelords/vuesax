@@ -4,7 +4,6 @@
       v-if="viewActive"
       :src="viewSrc" />
 
-
     <div class="con-img-upload">
       <!-- <transition-group v-for="(img,index) in getFilesFilter" :key="index" name="upload"> -->
       <div
@@ -19,10 +18,12 @@
           class="btn-x-file"
           type="button"
           @click="removeFile(index)">
-          <i
-            translate="no"
-            class="material-icons notranslate">
-            clear
+          <i 
+            :class="[iconPack == 'material-icons' ? 'material-icons' : iconPack + ' ' + iconClear ]"
+            translate="no" 
+            class="notranslate" 
+          >
+            {{ iconPack == 'material-icons' ? iconClear : '' }}
           </i>
         </button>
         <button
@@ -36,11 +37,15 @@
           }"
           class="btn-upload-file"
           @click="upload(index)">
-          <i
-            translate="no"
-            class="material-icons notranslate">
-            {{ img.percent >= 100?img.error?'report_problem':'cloud_done':'cloud_upload' }}
+
+          <i 
+            :class="[iconPack == 'material-icons' ? 'material-icons' : iconPack + ' ' + getIconPercentage(img) ]"
+            translate="no" 
+            class="notranslate" 
+          >
+            {{ iconPack == 'material-icons' ? getIconPercentage(img) : '' }}
           </i>
+          
           <span>{{ img.percent }} %</span>
         </button>
         <img
@@ -56,11 +61,14 @@
         <h4
           v-if="!img.src"
           class="text-archive">
-          <i
-            translate="no"
-            class="material-icons notranslate">
-            description
+          <i 
+            :class="[iconPack == 'material-icons' ? 'material-icons' : iconPack + ' ' + iconImage ]"
+            translate="no" 
+            class="notranslate" 
+          >
+            {{ iconPack == 'material-icons' ? iconImage : '' }}
           </i>
+
           <span>
             {{ img.name }}
           </span>
@@ -99,10 +107,13 @@
           title="Upload"
           class="btn-upload-all vs-upload--button-upload"
           @click="upload('all')">
-          <i
-            translate="no"
-            class="material-icons notranslate">
-            cloud_upload
+
+          <i 
+            :class="[iconPack == 'material-icons' ? 'material-icons' : iconPack + ' ' + iconUpload ]"
+            translate="no" 
+            class="notranslate" 
+          >
+            {{ iconPack == 'material-icons' ? iconUpload : '' }}
           </i>
         </button>
       </div>
@@ -158,7 +169,31 @@
       singleUpload: {
         default: false,
         type: Boolean
-      }
+      },
+      iconPack: {
+        default: "mdi",
+        type: String
+      },
+      iconClear: {
+        default: "mdi-close",
+        type: String
+      },
+      iconImage: {
+        default: "mdi-file-document",
+        type: String
+      },
+      iconUpload: {
+        default: "mdi-cloud-upload",
+        type: String
+      },
+      iconUploadDone: {
+        default: "mdi-cloud-check",
+        type: String
+      },
+      iconUploadError: {
+        default: "mdi-alert",
+        type: String
+      },
     },
     data:()=>({
       inputValue:null,
@@ -199,6 +234,9 @@
       }
     },
     methods:{
+      getIconPercentage(img) {
+        return img.percent >= 100 ? img.error ? this.iconUploadError : this.iconUploadDone : this.iconUpload
+      },
       viewImage(src,evt){
         var timeout;
 

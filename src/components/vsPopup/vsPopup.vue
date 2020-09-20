@@ -87,11 +87,11 @@ export default {
       type: String
     },
     iconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     },
     iconClose:{
-      default:'close',
+      default:'mdi-close',
       type:String
     },
   },

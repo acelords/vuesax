@@ -27,7 +27,7 @@ export default {
     },
     iconPack:{
       type:String,
-      default:'material-icons'
+      default:'mdi'
     },
   },
   data:()=>({

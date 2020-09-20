@@ -27,8 +27,8 @@
         :class="{'activeBtnClear': activeBtnClear}"
         class="icon-select-clear vs-select--icon-clear"
         @click="clearValue">
-        <i class="material-icons">
-          close
+        <i :class="[iconPack == 'material-icons' ? 'material-icons' : iconPack + ' ' + iconClear ]">
+          {{ iconPack == 'material-icons' ? iconClear : '' }}
         </i>
       </button>
 
@@ -166,15 +166,15 @@ export default {
       type: String
     },
     iconPack: {
-      default: "material-icons",
+      default: "mdi",
       type: String
     },
     icon: {
-      default: "keyboard_arrow_down",
+      default: "mdi-chevron-down",
       type: String
     },
     iconClear: {
-      default: "close",
+      default: "mdi-close",
       type: String
     },
     width: {

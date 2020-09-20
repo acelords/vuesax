@@ -33,7 +33,7 @@ export default {
     return colorx
   },
   isColor(colorx){
-    let vscolors = ['primary','secondary','success','danger','warning','dark', 'light']
+    let vscolors = ['primary','secondary','success','danger','warning','dark', 'light', 'info']
     return vscolors.includes(colorx)
   },
   RandomColor(){
@@ -58,7 +58,7 @@ export default {
       colorx = colorSplit
     }
 
-    let vscolors = ['primary','success','danger','warning','dark']
+    let vscolors = ['primary','success','danger','warning','dark', 'info']
     if(colorx){
       if(/[#()]/.test(colorx)){
         return colorx
@@ -110,7 +110,7 @@ export default {
     return String(styles.getPropertyValue(propertyName)).trim();
   },
   changeColor(colorInicial){
-    let colores = ['primary','success','danger','warning','dark']
+    let colores = ['primary','success','danger','warning','dark','info']
     let colorx
 
     if(colores.includes(colorInicial)){

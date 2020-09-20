@@ -55,11 +55,11 @@ export default {
       type:Boolean
     },
     vsIcon: {
-      default: 'keyboard_arrow_right',
+      default: 'mdi-chevron-down',
       type:String
     },
     iconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     }
   },

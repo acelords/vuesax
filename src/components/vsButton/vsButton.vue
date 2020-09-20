@@ -93,7 +93,7 @@ export default {
     },
     iconPack:{
       type:String,
-      default:'material-icons'
+      default:'mdi'
     },
     iconAfter:{
       default:false,

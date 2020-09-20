@@ -23,10 +23,11 @@
       @keydown.enter.prevent="clickOption()">
       <vs-icon 
         v-if="$parent.parent.multiple" 
+        :icon-pack="iconPack"
+        :icon="icon"
         class="icon-item vs-select--item-icon" 
-        icon="check_circle"></vs-icon>
-      <span
-        v-html="getText"></span>
+      ></vs-icon>
+      <span v-html="getText"></span>
     </button>
   </li>
 </template>
@@ -46,6 +47,14 @@ export default {
     },
     text:{
       default:null,
+    },
+    iconPack: {
+      default: "mdi",
+      type: String
+    },
+    icon: {
+      default: "mdi-check-circle",
+      type: String
     }
   },
   data:()=>({

@@ -50,11 +50,11 @@ export default {
       type: Boolean
     },
     iconArrow:{
-      default: 'keyboard_arrow_down',
+      default: 'mdi-chevron-down',
       type: String
     },
     iconPack:{
-      default: 'material-icons',
+      default: 'mdi',
       type: String
     },
     sst: {

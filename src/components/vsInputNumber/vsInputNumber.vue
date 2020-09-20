@@ -113,15 +113,15 @@ export default {
       type:String
     },
     iconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     },
     iconDec:{
-      default:'remove',
+      default:'mdi-minus',
       type:String
     },
     iconInc:{
-      default:'add',
+      default:'mdi-plus',
       type:String
     },
     step:{

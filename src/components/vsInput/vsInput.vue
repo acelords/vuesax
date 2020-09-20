@@ -158,7 +158,7 @@ export default {
       type:Boolean
     },
     iconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     },
     color:{
@@ -198,7 +198,7 @@ export default {
       type:String
     },
     valIconPack:{
-      default:'material-icons',
+      default:'mdi',
       type:String
     },
     valIconSuccess:{
