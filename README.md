@@ -25,10 +25,14 @@
 
 <h2 align="center">Supporting through Patreon</h2>
 
-Vuesax is an open source [MIT](https://raw.githubusercontent.com/lusaxweb/vuesax/master/LICENSE) project if you want to contribute to keep improving, If you are interested in supporting this project, please consider becoming a patron. [Patron](https://www.patreon.com/bePatron?c=1567892)
+Vuesax is an open source [MIT](https://raw.githubusercontent.com/lusaxweb/vuesax/master/LICENSE) project if you want to contribute to keep improving, If you are interested in supporting this project, please consider becoming a patron. 
+
+- Maintainer Patreon Page: [Patron](https://www.patreon.com/acelords)
+- Maintainer Ko-Fi Page: [ko-fi](https://ko-fi.com/acelords)
+- Creators Patreon Page: [Patron](https://www.patreon.com/bePatron?c=1567892)
 
 <p align="center">
-  <a href="https://www.patreon.com/bePatron?c=1567892">
+  <a href="https://www.patreon.com/lexxyungcarter">
     <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron" />
   </a>
 </p>
@@ -66,6 +70,10 @@ We are already creating vuesax 4 you can see the progress [here](https://vuesax.
 ## Support the project ⭐
 
 If you feel awesome and want to support us in a small way, please consider starring and sharing the repo! This helps us getting known and grow the community. 🙏
+
+- Maintainer Patreon Page: [Patron](https://www.patreon.com/acelords)
+- Maintainer Ko-Fi Page: [ko-fi](https://ko-fi.com/acelords)
+- Creators Patreon Page: [Patron](https://www.patreon.com/bePatron?c=1567892)
 
 <img src="https://raw.githubusercontent.com/lusaxweb/vuesax/master/public/github-vuesax-star.gif" alt="vuesax-star" />
 
