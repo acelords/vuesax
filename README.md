@@ -52,10 +52,17 @@ Vuesax is an open source [MIT](https://raw.githubusercontent.com/lusaxweb/vuesax
  </p>
 
 ## Changes in This Fork
-- Icons default switched from material icons (material-icons) to material design icons (MDI)
+
+```bash
+npm i @acelords/vuesax @mdi/font
+```
+- Icons default switched from material icons (material-icons) to material design icons (MDI) *No need to specify icon-pack="mdi"*
 - Added 'info' color present in bootstrap
 - Based off on vuesax version 3.12.0
 - Added `validate-icon-click` event on `vs-input`. Listen to it via `v-on:validate-icon-click`
+
+>NB: Check out a full working demo of this here 
+> - [Live Vuesax Repo](https://github.com/lexxyungcarter/vue-node-express-mongodb)
 
 ## Introduction
 
@@ -150,19 +157,19 @@ Recent versions of **Firefox**, **Chrome**, **Edge**, **Opera** and **Safari**. 
 ```
 
 ## CDN Links
-
+Only CDN links for the parent fork are available here. Should you wish we add links for this specific repo, please alert us.
 - https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.umd.js
 - https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css
 
 # Install inside a NPM project
 ``` bash
 # npm
-npm install vuesax
+npm install @acelords/vuesax
 ```
 
 ``` bash
 # yarn
-yarn add vuesax
+yarn add @acelords/vuesax
 ```
 
 ## Use
@@ -171,9 +178,9 @@ yarn add vuesax
 
 ```javascript
 import Vue from 'vue'
-import Vuesax from 'vuesax'
+import Vuesax from '@acelords/vuesax'
 
-import 'vuesax/dist/vuesax.css'
+import '@acelords/vuesax/dist/vuesax.css'
 Vue.use(Vuesax)
 ```
 
@@ -181,8 +188,8 @@ Vue.use(Vuesax)
 
 ```javascript
 import Vue from 'vue'
-import { vsButton, vsSelect, vsPopup } from 'vuesax'
-import 'vuesax/dist/vuesax.css'
+import { vsButton, vsSelect, vsPopup } from '@acelords/vuesax'
+import '@acelords/vuesax/dist/vuesax.css'
 
 Vue.use(vsButton)
 Vue.use(vsSelect)
